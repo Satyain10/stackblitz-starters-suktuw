@@ -1,0 +1,18 @@
+<%- include('layout') %>
+
+<section class="hero">
+    <h1>Welcome to Professional Services</h1>
+    <p>We provide top-quality solutions for your needs</p>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <% services.forEach(service => { %>
+            <div class="service-card">
+                <h3><%= service.name %></h3>
+                <p><%= service.description %></p>
+            </div>
+        <% }); %>
+    </div>
+</section>
